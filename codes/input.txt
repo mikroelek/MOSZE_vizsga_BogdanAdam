@@ -1,1 +1,1 @@
-Janos 25 3 Gabi 15 8
+Janos 25 3 2 Gabi 15 8 2
