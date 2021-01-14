@@ -5,7 +5,7 @@
 
 class Warrior {
     public:
-        void inputFromKeyboard();
+        void initialize(const std::string& name, int health_points, int damage, int defense);
         std::string toString() const;
         void attack(Warrior& defender) const;
         bool isAlive() const;

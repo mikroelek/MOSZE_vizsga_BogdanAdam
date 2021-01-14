@@ -1,8 +1,10 @@
 #include "Warrior.hpp"
-#include <iostream>
 
-void Warrior::inputFromKeyboard(){
-    std::cin>>name>>health_points>>damage>>defense;
+void Warrior::initialize(const std::string& name, int health_points, int damage, int defense) {
+    this->name=name;
+    this->health_points=health_points;
+    this->damage=damage;
+    this->defense=defense;
 }
 
 std::string Warrior::toString() const {
