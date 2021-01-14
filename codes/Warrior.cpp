@@ -1,6 +1,6 @@
 #include "Warrior.hpp"
 
-void Warrior::initialize(const std::string& name, int health_points, int damage, int defense) {
+Warrior::Warrior(const std::string& name, int health_points, int damage, int defense) {
     this->name=name;
     this->health_points=health_points;
     this->damage=damage;

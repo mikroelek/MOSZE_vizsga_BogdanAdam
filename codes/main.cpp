@@ -5,17 +5,15 @@ using namespace std;
 #include "Warrior.hpp"
 #include "Battle.hpp"
 
-void readDataFromInput(Warrior& warrior){
+
+int main() {
     std::string name;
     int hp, dmg, def;
     cin >> name >> hp >> dmg >> def;
-    warrior.initialize(name, hp, dmg, def);
-}
+    Warrior warrior1(name, hp, dmg, def);
+    cin >> name >> hp >> dmg >> def;
+    Warrior warrior2(name, hp, dmg, def);
 
-int main() {
-    Warrior warrior1, warrior2;
-    readDataFromInput(warrior1);
-    readDataFromInput(warrior2);
     fighting(warrior1, warrior2);
 
 return 0;
