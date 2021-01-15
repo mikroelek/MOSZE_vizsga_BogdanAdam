@@ -1,1 +1,12 @@
-a
+ name: Test
+
+on:
+  push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v2
+      - run: g++ -Wall *.cpp
