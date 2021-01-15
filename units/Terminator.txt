@@ -1,4 +1,0 @@
-Terminator
-300
-30
-5

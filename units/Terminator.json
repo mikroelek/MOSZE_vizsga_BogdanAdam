@@ -1,0 +1,6 @@
+{
+    "name" : "Terminator",
+    "health_points" : 300, 
+    "damage" : 30,
+    "defense" : 5
+}
