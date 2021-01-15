@@ -6,6 +6,7 @@
 class Warrior {
     public:
         Warrior(const std::string& name, int health_points, int damage, int defense);
+        Warrior(const std::string& filename);
         std::string toString() const;
         void attack(Warrior& defender) const;
         bool isAlive() const;
