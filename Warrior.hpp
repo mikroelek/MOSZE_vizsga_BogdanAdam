@@ -5,7 +5,7 @@
 
 class Warrior {
     public:
-        Warrior(const std::string& name, int health_points, int damage, int defense);
+        Warrior(const std::string& name, int health_points, int damage=0, int defense=0);
         Warrior(const std::string& filename);
         std::string toString() const;
         void attack(Warrior& defender) const;
