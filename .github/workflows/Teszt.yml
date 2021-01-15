@@ -11,7 +11,7 @@ jobs:
       - run: g++ -Wall *.cpp -o main
       - name: setup python
       - uses: actions/setup-python@v2
-        with:
+      - with:
           python-version: 3.6
       - name: generate output
       - run: |
