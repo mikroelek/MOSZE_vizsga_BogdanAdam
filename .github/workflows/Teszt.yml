@@ -9,10 +9,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: g++ -Wall *.cpp -o main
-      - name: setup python
+        name: setup python
       - uses: actions/setup-python@v2
         with:
           python-version: 3.6
-      - name: generate output
+        name: generate output
       - run: |
           python runt_est.py main output.txt
