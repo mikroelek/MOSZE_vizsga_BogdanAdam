@@ -20,11 +20,11 @@ void fighting(Warrior& warrior1, Warrior& warrior2) {
     std::cout<<"The winner is: ";
     if (warrior1.isAlive()) {
         printEndOfFight(warrior1);
-        std::cout<<" --- "<<warrior2.getName();
+        std::cout<<" --- "<<warrior2.getName()<<std::endl;
     }
     else {
         printEndOfFight(warrior2);
-        std::cout<<" --- "<<warrior1.getName();
+        std::cout<<" --- "<<warrior1.getName()<<std::endl;
 
     }
 }
