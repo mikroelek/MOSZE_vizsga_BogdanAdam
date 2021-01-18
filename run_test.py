@@ -10,7 +10,7 @@ unitPairs = [['Bela.txt', 'Janos.txt'],
              ['Janos.txt', 'Terminator.txt'],
              ['Janos.txt', 'Bela.txt'],
              ['Terminator.txt', 'Bela.txt'],
-             ['Terminator.txt', 'Janos.txt'],
+             ['Terminator.txt', 'Janos.txt']]
 
 with open(output, 'w') as output_f:
     for pair in unitPairs:
