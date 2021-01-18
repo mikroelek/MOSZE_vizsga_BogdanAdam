@@ -7,8 +7,8 @@ using namespace std;
 
 
 int main(int argc, char** argv) {
-    Warrior warrior1(argv[1]);
-    Warrior warrior2(argv[2]);
+    Warrior warrior1 = Warrior::parseFromText(argv[1]);
+    Warrior warrior2 = Warrior::parseFromText(argv[2]);
 
     fighting(warrior1, warrior2);
 
