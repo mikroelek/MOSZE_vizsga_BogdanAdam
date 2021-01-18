@@ -6,13 +6,9 @@ using namespace std;
 #include "Battle.hpp"
 
 
-int main() {
-    std::string name;
-    int hp, dmg, def;
-    cin >> name >> hp >> dmg >> def;
-    Warrior warrior1(name, hp, dmg, def);
-    cin >> name >> hp >> dmg >> def;
-    Warrior warrior2(name, hp, dmg, def);
+int main(int argc, char** argv) {
+    Warrior warrior1 = Warrior::parseFromText(argv[1]);
+    Warrior warrior2 = Warrior::parseFromText(argv[2]);
 
     fighting(warrior1, warrior2);
 

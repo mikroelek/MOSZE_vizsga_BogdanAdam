@@ -1,10 +1,19 @@
 #include "Warrior.hpp"
+#include <fstream>
 
-Warrior::Warrior(const std::string& name, int health_points, int damage, int defense) {
-    this->name=name;
-    this->health_points=health_points;
-    this->damage=damage;
-    this->defense=defense;
+Warrior::Warrior(const std::string& name, int health_points, int damage, int defense)
+    : name(name), health_points(health_points), damage(damage), defense(defense) {}
+
+Warrior Warrior::parseFromText(const std::string& filename) {
+    std::ifstream file(filename);
+    if(file.is_open()) {
+        std::string name;
+        int health_points, damage, defense;
+        file >> name >> health_points >> damage >> defense;
+        file.close();
+        return Warrior(name, health_points, damage, defense);
+    }
+    return Warrior("Geza", 1);
 }
 
 std::string Warrior::toString() const {
@@ -17,11 +26,15 @@ std::string Warrior::toString() const {
     +")";
 }
 
+std::string Warrior::getName() const {
+    return name;
+}
+
 void Warrior::die() {
     health_points=0;
     damage=0;
     defense=0;
-    name += " DEAD ";
+    name += " DEAD";
 }
 
 void Warrior::attack(Warrior& defender) const {

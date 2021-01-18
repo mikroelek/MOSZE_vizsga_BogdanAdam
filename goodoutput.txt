@@ -1,0 +1,12 @@
+Bela (HP: 200 DMG: 28 DEF: 11) --- Janos (HP: 150 DMG: 30 DEF: 8)
+The winner is: Bela (HP: 67 DMG: 28 DEF: 11) --- Janos DEAD
+Bela (HP: 200 DMG: 28 DEF: 11) --- Terminator (HP: 300 DMG: 30 DEF: 5)
+The winner is: Terminator (HP: 47 DMG: 30 DEF: 5) --- Bela DEAD
+Janos (HP: 150 DMG: 30 DEF: 8) --- Terminator (HP: 300 DMG: 30 DEF: 5)
+The winner is: Terminator (HP: 125 DMG: 30 DEF: 5) --- Janos DEAD
+Janos (HP: 150 DMG: 30 DEF: 8) --- Bela (HP: 200 DMG: 28 DEF: 11)
+The winner is: Bela (HP: 48 DMG: 28 DEF: 11) --- Janos DEAD
+Terminator (HP: 300 DMG: 30 DEF: 5) --- Bela (HP: 200 DMG: 28 DEF: 11)
+The winner is: Terminator (HP: 70 DMG: 30 DEF: 5) --- Bela DEAD
+Terminator (HP: 300 DMG: 30 DEF: 5) --- Janos (HP: 150 DMG: 30 DEF: 8)
+The winner is: Terminator (HP: 150 DMG: 30 DEF: 5) --- Janos DEAD
