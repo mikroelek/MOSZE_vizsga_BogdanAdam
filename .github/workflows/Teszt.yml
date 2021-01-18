@@ -8,12 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: g++ -Wall *.cpp -o main.exe
+      - run: g++ *.cpp -o main.exe
       - run: main.exe units/Bela.txt units/Janos.txt
-        name: setup python
-      - uses: actions/setup-python@v2
-        with:
-          python-version: 3.6
-        name: generate output
-      - run: |
-          python run_test.py main output.txt
