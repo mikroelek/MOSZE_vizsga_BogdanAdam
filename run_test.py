@@ -5,8 +5,12 @@ import sys
 exe = './' + sys.argv[1]
 output = sys.argv[2]
 
-unitPairs = [['Bela.txt', 'Janos.txt']]
-
+unitPairs = [['Bela.txt', 'Janos.txt'],
+             ['Bela.txt', 'Terminator.txt'],
+             ['Janos.txt', 'Terminator.txt'],
+             ['Janos.txt', 'Bela.txt'],
+             ['Terminator.txt', 'Bela.txt'],
+             ['Terminator.txt', 'Janos.txt'],
 
 with open(output, 'w') as output_f:
     for pair in unitPairs:

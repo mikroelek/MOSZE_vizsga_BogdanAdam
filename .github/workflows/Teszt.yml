@@ -7,10 +7,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: check repo content
+        uses: actions/checkout@v2
       - run: g++ -Wall *.cpp -o main
-      - uses: actions/setup-python@v2
+      - name: setup python
+        uses: actions/setup-python@v2
         with:
           python-version: 3.6
-      - run: |
+      - name: generate output    
+        run: |
           python run_test.py main output.txt
+      - name: check output
+        run: diff output.txt goodoutput.txt
