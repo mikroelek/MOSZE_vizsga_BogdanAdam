@@ -1,9 +1,15 @@
+import subprocess
+import os
 import sys
 
-txt = open("input.txt","r")
-txt_content = txt.read()
-if(("error" in txt_content) or ("warning" in txt_content)):
-    sys.exit(1)
-else:
-    sys.exit(0)
-txt.close()
+exe = './' + sys.argv[1]
+output = sys.argv[2]
+
+unitPairs = [['Bela.txt', 'Janos.txt']]
+
+
+with open(output, 'w') as output_f:
+    for pair in unitPairs:
+        args = [exe, pair[0], pair[1]]
+        subprocess.call(args,
+                        stdout=output_f, stderr=output_f)
