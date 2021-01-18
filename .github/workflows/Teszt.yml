@@ -13,4 +13,4 @@ jobs:
         with:
           python-version: 3.6
       - run: |
-          python run_test-py main output.txt
+          python run_test.py main output.txt
