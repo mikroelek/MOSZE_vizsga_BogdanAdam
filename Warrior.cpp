@@ -30,7 +30,7 @@ void Warrior::die() {
     health_points=0;
     damage=0;
     defense=0;
-    name += " DEAD ";
+    name += " DEAD";
 }
 
 void Warrior::attack(Warrior& defender) const {
