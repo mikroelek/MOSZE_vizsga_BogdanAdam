@@ -26,6 +26,10 @@ std::string Warrior::toString() const {
     +")";
 }
 
+std::string Warrior::getName() const {
+    return name;
+}
+
 void Warrior::die() {
     health_points=0;
     damage=0;
